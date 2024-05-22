@@ -1,0 +1,68 @@
+@import url(./header.css);
+@import url(./background.css);
+@import url(./main.css);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --text: #EDF1F7;
+    --red: #C51212;
+    --blue: #0041C2;
+    --green: #14B02D;
+    --yellow: #ffc12b;
+  }
+  
+  body, button, a {
+    color: var(--text);
+    font: 400 1rem "Mukta", sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+
+  .app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  /* Estilos gerais */
+
+/* Estilos para telas menores que 768px */
+@media (max-width: 768px) {
+  /* Exemplo de ajuste do tamanho da logo no cabeçalho */
+  header img {
+    width: 200px;
+  }
+
+  /* Exemplo de ajuste do tamanho do texto no cabeçalho */
+  header .navigation {
+    font-size: 0.8em;
+  }
+
+  /* Exemplo de ajuste do tamanho do ícone de mídia social */
+  .nav_social svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Exemplo de ajuste do tamanho da imagem principal no main */
+  main img {
+    width: 300px;
+  }
+}
+
+/* Estilos para telas maiores que 768px */
+@media (min-width: 769px) {
+  /* Estilos específicos para telas maiores */
+}

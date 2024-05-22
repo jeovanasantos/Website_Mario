@@ -1,0 +1,33 @@
+main{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.main_info{
+    padding: 5%;
+    width: 100%;
+    max-width: 570px;
+}
+
+.main_info p{
+    font-size: 18px;
+    margin: 20px 0 28px;
+}
+
+.main_info div{
+    display: flex;
+    column-gap: 32px;
+}
+
+/* Estilos para telas menores que 768px */
+@media (max-width: 768px) {
+    /* Exemplo de ajuste do tamanho da imagem principal no main */
+    img {
+      width: 300px;
+    }
+  }
+  
